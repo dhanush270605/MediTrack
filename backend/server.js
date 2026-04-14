@@ -30,7 +30,7 @@ if (!fs.existsSync(logsDir)) fs.mkdirSync(logsDir);
 // ── Security & Parsing ─────────────────────────────────────────────────────
 app.use(helmet());
 app.use(cors({
-  origin: process.env.CLIENT_URL || 'http://localhost:3000',
+  origin: process.env.CLIENT_URL,
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],
@@ -71,9 +71,9 @@ const startServer = async () => {
 
   app.listen(PORT, () => {
     logger.info(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
-    logger.info(` MediTrack API  →  http://localhost:${PORT}`);
+    logger.info(` MediTrack API  →  PORT ${PORT}`);
     logger.info(` Environment   →  ${process.env.NODE_ENV}`);
-    logger.info(` Health Check  →  http://localhost:${PORT}/health`);
+    logger.info(` Health Check  →  /health`);
     logger.info(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);
   });
 };

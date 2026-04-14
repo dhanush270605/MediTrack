@@ -2,11 +2,11 @@ const { Pool } = require('pg');
 const logger = require('../utils/logger');
 
 const pool = new Pool({
-  host: "meditrack-db-123.postgres.database.azure.com",
-  user: "postgresadmin@meditrack-db-123",
-  password:"9786@Sridevi",
-  database: "meditrack",
-  port: 5432,
+  host: process.env.DB_HOST,
+  user: process.env.DB_USER,
+  password: process.env.DB_PASSWORD,
+  database: process.env.DB_NAME,
+  port: parseInt(process.env.DB_PORT, 10) || 5432,
   ssl: {
     rejectUnauthorized: false
   }

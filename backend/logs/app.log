@@ -592,3 +592,6 @@
 [2026-04-15 00:35:37] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
 [2026-04-15 00:35:46] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
 [2026-04-15 00:35:57] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:40:39] ERROR: Database connection failed: The server does not support SSL connections
+[2026-04-15 00:40:50] ERROR: Database connection failed: The server does not support SSL connections
+[2026-04-15 00:40:58] ERROR: Database connection failed: The server does not support SSL connections
