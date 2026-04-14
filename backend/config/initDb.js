@@ -1,50 +1,19 @@
-require('dotenv').config();
-const { Client } = require('pg');
+const { pool } = require('./db');
+const logger = require('../utils/logger');
 
-const config = {
-  host: process.env.DB_HOST,
-  port: parseInt(process.env.DB_PORT, 10),
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-};
-
-async function setup() {
-  console.log('Starting DB Setup...');
-  
-  // Connect to default 'postgres' database first to create the target db
-  let client = new Client({ ...config, database: 'postgres' });
+async function initializeDatabase() {
+  const client = await pool.connect();
   try {
-    await client.connect();
-    const res = await client.query(`SELECT datname FROM pg_catalog.pg_database WHERE datname = 'meditrack'`);
-    if (res.rowCount === 0) {
-      console.log('Creating meditrack database...');
-      await client.query(`CREATE DATABASE meditrack`);
-    } else {
-      console.log('Database meditrack already exists.');
-    }
-  } catch (err) {
-    console.error('Error creating database:', err.message);
-    process.exit(1);
-  } finally {
-    await client.end();
-  }
+    logger.info('Running Azure-safe Database Initialization...');
 
-  // Now connect to the newly created database and run schema queries
-  client = new Client({ ...config, database: 'meditrack' });
-  try {
-    await client.connect();
-    console.log('Connected to meditrack database. Creating tables...');
-
-    await client.query(`CREATE EXTENSION IF NOT EXISTS "uuid-ossp";`);
-
-    // Tables schema
+    // 1. Users Table
     await client.query(`
       CREATE TABLE IF NOT EXISTS users (
-        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        id UUID PRIMARY KEY,
         email VARCHAR(255) UNIQUE NOT NULL,
         full_name VARCHAR(255) NOT NULL,
         password_hash VARCHAR(255) NOT NULL,
-        role VARCHAR(50) DEFAULT 'patient',
+        role VARCHAR(50) DEFAULT 'user',
         avatar_url VARCHAR(1024),
         timezone VARCHAR(100) DEFAULT 'UTC',
         is_active BOOLEAN DEFAULT true,
@@ -54,9 +23,10 @@ async function setup() {
       );
     `);
 
+    // 2. Medications Table
     await client.query(`
       CREATE TABLE IF NOT EXISTS medications (
-        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        id UUID PRIMARY KEY,
         owner_user_id UUID REFERENCES users(id) ON DELETE CASCADE,
         dependent_id UUID,
         name VARCHAR(255) NOT NULL,
@@ -77,9 +47,10 @@ async function setup() {
       );
     `);
 
+    // 3. Medication Schedules Table
     await client.query(`
       CREATE TABLE IF NOT EXISTS medication_schedules (
-        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        id UUID PRIMARY KEY,
         medication_id UUID REFERENCES medications(id) ON DELETE CASCADE,
         scheduled_time TIME NOT NULL,
         day_of_week INTEGER,
@@ -89,9 +60,10 @@ async function setup() {
       );
     `);
 
+    // 4. Adherence Logs Table
     await client.query(`
       CREATE TABLE IF NOT EXISTS adherence_logs (
-        id UUID PRIMARY KEY DEFAULT uuid_generate_v4(),
+        id UUID PRIMARY KEY,
         medication_id UUID REFERENCES medications(id) ON DELETE CASCADE,
         schedule_id UUID REFERENCES medication_schedules(id) ON DELETE SET NULL,
         scheduled_for TIMESTAMP NOT NULL,
@@ -103,12 +75,25 @@ async function setup() {
       );
     `);
 
-    console.log('Tables created successfully!');
+    // 5. Notifications Table
+    await client.query(`
+      CREATE TABLE IF NOT EXISTS notifications (
+        id UUID PRIMARY KEY,
+        user_id UUID REFERENCES users(id) ON DELETE CASCADE,
+        title VARCHAR(255) NOT NULL,
+        message TEXT NOT NULL,
+        type VARCHAR(50) DEFAULT 'system',
+        is_read BOOLEAN DEFAULT false,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+      );
+    `);
+
+    logger.info('All tables validated successfully via Azure-safe schema.');
   } catch (err) {
-    console.error('Error creating tables:', err.message);
+    logger.error(`Database initialization failure: ${err.message}`);
   } finally {
-    await client.end();
+    client.release();
   }
 }
 
-setup();
+module.exports = { initializeDatabase };

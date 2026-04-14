@@ -4,7 +4,7 @@ const logger = require('../utils/logger');
 const pool = new Pool({
   host: "meditrack-db-123.postgres.database.azure.com",
   user: "postgresadmin@meditrack-db-123",
-  password: "9786@Sridevi",
+  password:"9786@Sridevi",
   database: "meditrack",
   port: 5432,
   ssl: {

@@ -8,6 +8,7 @@ const path = require('path');
 const fs = require('fs');
 
 const { testConnection } = require('./config/db');
+const { initializeDatabase } = require('./config/initDb');
 const logger = require('./utils/logger');
 const { errorHandler, notFound } = require('./middleware/errorHandler');
 
@@ -66,6 +67,7 @@ app.use(errorHandler);
 // ── Startup ────────────────────────────────────────────────────────────────
 const startServer = async () => {
   await testConnection();
+  await initializeDatabase();
 
   app.listen(PORT, () => {
     logger.info(`━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━`);

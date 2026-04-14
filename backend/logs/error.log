@@ -50,3 +50,26 @@ Require stack:
 [2026-04-15 00:10:53] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
 [2026-04-15 00:11:38] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
 [2026-04-15 00:12:17] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:13:58] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:14:26] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:14:29] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:14:42] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:15:43] ERROR: ReferenceError: password is not defined
+    at Object.<anonymous> (D:\PROJECT\demo1\backend\config\db.js:7:3)
+    at Module._compile (node:internal/modules/cjs/loader:1730:14)
+    at Object..js (node:internal/modules/cjs/loader:1895:10)
+    at Module.load (node:internal/modules/cjs/loader:1465:32)
+    at Function._load (node:internal/modules/cjs/loader:1282:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:235:24)
+    at Module.require (node:internal/modules/cjs/loader:1487:12)
+    at require (node:internal/modules/helpers:135:16)
+    at Object.<anonymous> (D:\PROJECT\demo1\backend\server.js:10:28)
+[2026-04-15 00:15:50] ERROR: Database connection failed: SASL: SCRAM-SERVER-FIRST-MESSAGE: client password must be a string
+[2026-04-15 00:15:55] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:16:01] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:31:09] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:31:18] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:35:37] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:35:46] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:35:57] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
