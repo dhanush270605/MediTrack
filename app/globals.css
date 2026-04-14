@@ -1,0 +1,108 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: oklch(0.05 0.02 254);
+  --foreground: oklch(0.95 0.01 254);
+  --card: oklch(0.08 0.03 254);
+  --card-foreground: oklch(0.95 0.01 254);
+  --popover: oklch(0.08 0.03 254);
+  --popover-foreground: oklch(0.95 0.01 254);
+  --primary: #00f5ff;
+  --primary-foreground: oklch(0.05 0.02 254);
+  --secondary: oklch(0.12 0.04 254);
+  --secondary-foreground: oklch(0.95 0.01 254);
+  --muted: oklch(0.12 0.04 254);
+  --muted-foreground: oklch(0.55 0.02 254);
+  --accent: #8b5cf6;
+  --accent-foreground: oklch(0.05 0.02 254);
+  --destructive: oklch(0.577 0.245 27.325);
+  --destructive-foreground: oklch(0.95 0.01 254);
+  --border: oklch(0.15 0.03 254);
+  --input: oklch(0.15 0.03 254);
+  --ring: #00f5ff;
+  --chart-1: #00f5ff;
+  --chart-2: #8b5cf6;
+  --chart-3: #f59e0b;
+  --chart-4: #10b981;
+  --chart-5: #3b82f6;
+  --radius: 0.75rem;
+}
+
+.dark {
+  --background: #0a0b14;
+  --foreground: #f8fafc;
+  --card: #11121e;
+  --card-foreground: #f8fafc;
+  --popover: #11121e;
+  --popover-foreground: #f8fafc;
+  --primary: #00f5ff;
+  --primary-foreground: #0a0b14;
+  --secondary: #1e293b;
+  --secondary-foreground: #f8fafc;
+  --muted: #1e293b;
+  --muted-foreground: #94a3b8;
+  --accent: #8b5cf6;
+  --accent-foreground: #0a0b14;
+  --border: #1e293b;
+  --input: #1e293b;
+  --ring: #00f5ff;
+}
+
+@theme inline {
+  --font-sans: 'Inter', 'Geist', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-border: var(--border);
+  --color-ring: var(--ring);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground antialiased;
+    background-image: 
+      radial-gradient(circle at 50% -20%, #00f5ff22, transparent 50%),
+      linear-gradient(to right, #1e293b11 1px, transparent 1px),
+      linear-gradient(to bottom, #1e293b11 1px, transparent 1px);
+    background-size: 100% 100%, 40px 40px, 40px 40px;
+  }
+}
+
+@layer components {
+  .glass-card {
+    @apply bg-slate-900/40 backdrop-blur-xl border border-white/10 shadow-2xl transition-all duration-300;
+  }
+  
+  .glass-card:hover {
+    @apply border-primary/30 shadow-primary/10;
+  }
+
+  .neon-glow {
+    text-shadow: 0 0 10px var(--primary), 0 0 20px var(--primary);
+  }
+
+  .neon-border {
+    box-shadow: 0 0 10px var(--primary), inset 0 0 5px var(--primary);
+  }
+
+  .skeleton-line {
+    @apply h-4 w-full rounded-lg bg-white/5;
+  }
+}
+
+@keyframes shimmer {
+  100% {
+    transform: translateX(100%);
+  }
+}

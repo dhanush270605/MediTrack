@@ -1,0 +1,190 @@
+[2026-04-14 18:19:38] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:19:38] INFO: Database connected successfully at Tue Apr 14 2026 18:19:38 GMT+0530 (India Standard Time)
+[2026-04-14 18:19:38] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:19:38] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:19:38] INFO:  Environment   →  development
+[2026-04-14 18:19:38] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:19:38] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:24:03] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:24:03] INFO: POST /api/auth/login 401 73.586 ms – ::1
+[2026-04-14 18:24:21] INFO: POST /api/auth/login 401 4.841 ms – ::1
+[2026-04-14 18:24:22] INFO: POST /api/auth/login 401 3.631 ms – ::1
+[2026-04-14 18:24:39] INFO: POST /api/auth/signup 422 3.520 ms – ::1
+[2026-04-14 18:24:46] INFO: POST /api/auth/signup 422 1.722 ms – ::1
+[2026-04-14 18:25:11] INFO: POST /api/auth/signup 422 1.501 ms – ::1
+[2026-04-14 18:25:28] INFO: POST /api/auth/signup 422 1.573 ms – ::1
+[2026-04-14 18:26:23] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:26:23] INFO: Database connected successfully at Tue Apr 14 2026 18:26:23 GMT+0530 (India Standard Time)
+[2026-04-14 18:26:23] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:26:23] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:26:23] INFO:  Environment   →  development
+[2026-04-14 18:26:23] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:26:23] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:26:37] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:26:37] INFO: Database connected successfully at Tue Apr 14 2026 18:26:37 GMT+0530 (India Standard Time)
+[2026-04-14 18:26:37] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:26:37] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:26:37] INFO:  Environment   →  development
+[2026-04-14 18:26:37] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:26:37] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:26:50] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:26:50] INFO: Database connected successfully at Tue Apr 14 2026 18:26:50 GMT+0530 (India Standard Time)
+[2026-04-14 18:26:50] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:26:50] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:26:50] INFO:  Environment   →  development
+[2026-04-14 18:26:50] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:26:50] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:27:30] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:27:30] INFO: New user registered: dhanusht27062005@gmail.com [user]
+[2026-04-14 18:27:30] INFO: POST /api/auth/signup 201 549.436 ms – ::1
+[2026-04-14 18:27:30] INFO: GET /api/medications 200 12.492 ms – ::1
+[2026-04-14 18:27:30] INFO: GET /api/schedules/daily 200 8.410 ms – ::1
+[2026-04-14 18:27:30] INFO: GET /api/adherence 200 5.462 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/auth/me 200 3.268 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/auth/me 304 4.247 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/medications 304 4.924 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/medications 304 4.218 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/schedules/daily 304 3.848 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/schedules/daily 304 3.841 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/adherence 304 4.144 ms – ::1
+[2026-04-14 18:27:31] INFO: GET /api/adherence 304 2.773 ms – ::1
+[2026-04-14 18:28:05] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:28:05] INFO: POST /api/medications 201 190.722 ms – ::1
+[2026-04-14 18:28:05] INFO: POST /api/schedules 201 11.778 ms – ::1
+[2026-04-14 18:28:05] INFO: GET /api/medications 200 7.138 ms – ::1
+[2026-04-14 18:28:05] INFO: GET /api/schedules/daily 200 4.614 ms – ::1
+[2026-04-14 18:28:05] INFO: GET /api/adherence 304 4.409 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/auth/me 304 3.274 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/auth/me 304 2.924 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/medications 304 4.433 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/medications 304 4.027 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/medications 304 7.187 ms – ::1
+[2026-04-14 18:28:11] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:28:11] INFO: GET /api/schedules/daily 304 71.076 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/schedules/daily 304 3.584 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/schedules/daily 304 3.354 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/adherence 304 5.206 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/adherence 304 3.506 ms – ::1
+[2026-04-14 18:28:11] INFO: GET /api/adherence 304 3.374 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/auth/me 304 5.328 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/auth/me 304 3.648 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/medications 304 3.492 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/medications 304 4.413 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/schedules/daily 304 2.655 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/medications 304 6.330 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/schedules/daily 304 4.731 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/adherence 304 3.414 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/schedules/daily 304 3.223 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/adherence 304 2.564 ms – ::1
+[2026-04-14 18:28:22] INFO: GET /api/adherence 304 2.711 ms – ::1
+[2026-04-14 18:28:29] INFO: POST /api/auth/login 401 4.392 ms – ::1
+[2026-04-14 18:28:58] INFO: POST /api/auth/login 401 2.706 ms – ::1
+[2026-04-14 18:28:59] INFO: POST /api/auth/login 401 2.152 ms – ::1
+[2026-04-14 18:29:23] INFO: User logged in: dhanusht27062005@gmail.com
+[2026-04-14 18:29:23] INFO: POST /api/auth/login 200 445.897 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/medications 304 4.362 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/schedules/daily 304 2.616 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/adherence 304 3.754 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/auth/me 200 3.167 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/auth/me 304 3.281 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/medications 304 4.215 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/medications 304 5.044 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/schedules/daily 304 2.997 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/schedules/daily 304 3.879 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/adherence 304 3.189 ms – ::1
+[2026-04-14 18:29:23] INFO: GET /api/adherence 304 3.406 ms – ::1
+[2026-04-14 18:31:12] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:31:12] INFO: New user registered: dhanush10thmail@gmail.com [user]
+[2026-04-14 18:31:12] INFO: POST /api/auth/signup 201 510.151 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/auth/me 200 5.369 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/auth/me 304 3.969 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/medications 200 6.313 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/medications 304 4.161 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/schedules/daily 200 5.917 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/schedules/daily 304 3.972 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/adherence 304 6.501 ms – ::1
+[2026-04-14 18:31:13] INFO: GET /api/adherence 304 3.031 ms – ::1
+[2026-04-14 18:31:35] INFO: User logged in: dhanusht27062005@gmail.com
+[2026-04-14 18:31:35] INFO: POST /api/auth/login 200 674.561 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/auth/me 200 5.990 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/auth/me 304 3.763 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/medications 200 5.571 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/medications 304 5.502 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/schedules/daily 200 5.146 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/schedules/daily 304 8.470 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/adherence 304 4.873 ms – ::1
+[2026-04-14 18:31:35] INFO: GET /api/adherence 304 5.175 ms – ::1
+[2026-04-14 18:31:49] INFO: POST /api/adherence 201 10.281 ms – ::1
+[2026-04-14 18:33:54] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:33:54] INFO: POST /api/medications 201 97.270 ms – ::1
+[2026-04-14 18:33:54] INFO: POST /api/schedules 201 9.690 ms – ::1
+[2026-04-14 18:33:54] INFO: GET /api/medications 200 7.089 ms – ::1
+[2026-04-14 18:33:54] INFO: GET /api/schedules/daily 200 6.502 ms – ::1
+[2026-04-14 18:33:54] INFO: GET /api/adherence 200 6.984 ms – ::1
+[2026-04-14 18:34:29] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:34:29] INFO: POST /api/adherence 201 101.022 ms – ::1
+[2026-04-14 18:34:30] INFO: POST /api/adherence 201 7.001 ms – ::1
+[2026-04-14 18:34:31] INFO: POST /api/adherence 201 6.508 ms – ::1
+[2026-04-14 18:34:31] INFO: POST /api/adherence 201 7.780 ms – ::1
+[2026-04-14 18:34:33] INFO: POST /api/adherence 201 8.126 ms – ::1
+[2026-04-14 18:34:44] INFO: POST /api/adherence 201 9.944 ms – ::1
+[2026-04-14 18:34:45] INFO: POST /api/adherence 201 8.228 ms – ::1
+[2026-04-14 18:34:45] INFO: POST /api/adherence 201 6.073 ms – ::1
+[2026-04-14 18:34:46] INFO: POST /api/adherence 201 9.062 ms – ::1
+[2026-04-14 18:34:46] INFO: POST /api/adherence 201 7.504 ms – ::1
+[2026-04-14 18:34:46] INFO: POST /api/adherence 201 7.508 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/auth/me 304 3.919 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/auth/me 304 3.832 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/medications 304 5.472 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/medications 304 5.167 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/medications 304 9.610 ms – ::1
+[2026-04-14 18:35:09] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:35:09] INFO: GET /api/schedules/daily 304 91.326 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/schedules/daily 304 4.401 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/schedules/daily 304 4.056 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/adherence 200 7.675 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/adherence 304 4.825 ms – ::1
+[2026-04-14 18:35:09] INFO: GET /api/adherence 304 4.709 ms – ::1
+[2026-04-14 18:35:33] WARN: Failed login attempt for: dhanusht27062005@gmail.com
+[2026-04-14 18:35:33] INFO: POST /api/auth/login 401 574.820 ms – ::1
+[2026-04-14 18:35:37] INFO: User logged in: dhanusht27062005@gmail.com
+[2026-04-14 18:35:37] INFO: POST /api/auth/login 200 597.800 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/medications 304 5.449 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/schedules/daily 304 4.415 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/adherence 304 4.596 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/auth/me 200 3.147 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/auth/me 304 3.798 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/medications 304 4.495 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/medications 304 4.762 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/schedules/daily 304 3.147 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/schedules/daily 304 4.207 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/adherence 304 4.191 ms – ::1
+[2026-04-14 18:35:37] INFO: GET /api/adherence 304 4.116 ms – ::1
+[2026-04-14 18:40:10] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:40:10] INFO: Database connected successfully at Tue Apr 14 2026 18:40:10 GMT+0530 (India Standard Time)
+[2026-04-14 18:40:10] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:40:10] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:40:10] INFO:  Environment   →  development
+[2026-04-14 18:40:10] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:40:10] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:40:39] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:40:39] INFO: Database connected successfully at Tue Apr 14 2026 18:40:39 GMT+0530 (India Standard Time)
+[2026-04-14 18:40:39] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:40:39] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:40:39] INFO:  Environment   →  development
+[2026-04-14 18:40:39] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:40:39] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:40:56] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:40:56] INFO: Database connected successfully at Tue Apr 14 2026 18:40:56 GMT+0530 (India Standard Time)
+[2026-04-14 18:40:56] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:40:56] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:40:56] INFO:  Environment   →  development
+[2026-04-14 18:40:56] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:40:56] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:41:12] INFO: PostgreSQL pool: new client connected
+[2026-04-14 18:41:12] INFO: Database connected successfully at Tue Apr 14 2026 18:41:12 GMT+0530 (India Standard Time)
+[2026-04-14 18:41:12] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
+[2026-04-14 18:41:12] INFO:  MediTrack API  →  http://localhost:5000
+[2026-04-14 18:41:12] INFO:  Environment   →  development
+[2026-04-14 18:41:12] INFO:  Health Check  →  http://localhost:5000/health
+[2026-04-14 18:41:12] INFO: ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
