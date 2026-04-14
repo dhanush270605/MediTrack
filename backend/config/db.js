@@ -2,14 +2,14 @@ const { Pool } = require('pg');
 const logger = require('../utils/logger');
 
 const pool = new Pool({
-  host: process.env.DB_HOST,
-  port: parseInt(process.env.DB_PORT, 10),
-  database: process.env.DB_NAME,
-  user: process.env.DB_USER,
-  password: process.env.DB_PASSWORD,
-  max: parseInt(process.env.DB_MAX_CONNECTIONS, 10) || 10,
-  idleTimeoutMillis: parseInt(process.env.DB_IDLE_TIMEOUT_MS, 10) || 30000,
-  connectionTimeoutMillis: parseInt(process.env.DB_CONNECTION_TIMEOUT_MS, 10) || 2000,
+  host: "meditrack-db-123.postgres.database.azure.com",
+  user: "postgresadmin@meditrack-db-123",
+  password: "9786@Sridevi",
+  database: "meditrack",
+  port: 5432,
+  ssl: {
+    rejectUnauthorized: false
+  }
 });
 
 pool.on('connect', () => {

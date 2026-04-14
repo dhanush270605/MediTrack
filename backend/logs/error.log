@@ -46,3 +46,7 @@ Require stack:
     at require (node:internal/modules/helpers:135:16)
     at Object.<anonymous> (D:\PROJECT\demo1\backend\utils\jwt.js:1:13)
     at Module._compile (node:internal/modules/cjs/loader:1730:14)
+[2026-04-14 23:50:42] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:10:53] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:11:38] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
+[2026-04-15 00:12:17] ERROR: Database connection failed: password authentication failed for user "postgresadmin@meditrack-db-123"
