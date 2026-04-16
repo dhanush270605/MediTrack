@@ -3,7 +3,7 @@
  * Automatically handles JSON parsing, error throwing, and injecting the Bearer token.
  */
 
-const API_BASE_URL = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:5000/api';
+const API_BASE_URL = "https://<your-azure-app>.azurewebsites.net/api";
 
 export class ApiError extends Error {
   status: number;
